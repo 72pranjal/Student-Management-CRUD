@@ -80,7 +80,7 @@ function editStudents() {
         email: stEmail,
     };
     students[editedIndex] = stObj;
-    showStudents
+    showStudents()
     clearForm()
     addBtn.classList.add('active')
     editBtn.classList.remove('active')
