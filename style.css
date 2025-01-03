@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    /* font-family: ''; */
+}
+
+.st-container {
+    padding: 3%;
+}
+
+.inputs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.inputs-container .item {
+    flex: 0 0 32.5%;
+}
+
+.inputs-container .item input {
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 3.5%;
+}
+
+.inputs-container .item input::placeholder {
+    font-size: 18px;
+    color: #fff;
+}
+
+.inputs-container .item input:focus-visible {
+    outline: none;
+}
+
+.action-btn button {
+    width: 25%;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    display: none;
+}
+
+.action-btn button.active {
+    display: block;
+}
+
+.action-btn .edit-st {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.students-list {
+    padding-top: 4%;
+}
+
+.students-list table {
+    border-collapse: collapse;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 100%;
+}
+
+.students-list table thead tr {
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #fff;
+}
+
+.students-list table thead tr th {
+    padding: 12px 0;
+    border: 1px solid #fff;
+}
+
+.students-list table tbody {
+    min-height: 300px;
+}
+
+.students-list table tbody tr {
+    font-size: 18px;
+}
+
+.students-list table tbody tr td {
+    padding: 12px 0;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.students-list table tbody tr td img {
+    cursor: pointer;
+}
+
+.filter-sturdent {
+    padding-top: 4%;
+}
+
+.filter-sturdent input {
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+}
+
+.filter-sturdent input::placeholder {
+    font-size: 18px;
+    color: #fff;
+}
+
+.filter-sturdent input:focus-visible {
+    outline: none;
+}

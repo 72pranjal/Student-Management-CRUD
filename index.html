@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDENTS CRUD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="st-container">
+      <h1>Student Management CRUD</h1>
+
+      <div class="add-students">
+        <div class="inputs-container">
+          <div class="user-name item">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              autocomplete="off"
+            />
+          </div>
+          <div class="user-email item">
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              autocomplete="off"
+            />
+          </div>
+          <div class="user-gpa item">
+            <input type="text" id="gpa" placeholder="GPA" autocomplete="off" />
+          </div>
+          <div class="user-age item">
+            <input type="text" id="age" placeholder="Age" autocomplete="off" />
+          </div>
+          <div class="user-degree item">
+            <input
+              type="text"
+              placeholder="Degree"
+              id="degree"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <div class="action-btn">
+          <button type="submit" class="add-st active" onclick="addStudents()">
+            Add Students
+          </button>
+          <button type="submit" class="edit-st" onclick="editStudents()">
+            Edit Student
+          </button>
+        </div>
+      </div>
+
+      <div class="filter-sturdent">
+        <input
+          type="search"
+          id="searchbox"
+          oninput="updateTable()"
+          placeholder="Search By name, email or degree"
+        />
+      </div>
+
+      <div class="students-list">
+        <table id="myTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Student Name</th>
+              <th>Email</th>
+              <th>Age</th>
+              <th>GPA</th>
+              <th>Degree</th>
+            </tr>
+          </thead>
+          <tbody id="studentsTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
