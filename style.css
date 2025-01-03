@@ -12,6 +12,11 @@ body {
 .st-container {
     padding: 3%;
 }
+.st-container h1 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 2%;
+}
 
 .inputs-container {
     display: flex;
